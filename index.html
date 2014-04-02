@@ -11,15 +11,6 @@
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-
-
-
-
-
-
-
-
-
         <!-- CSS code from Bootply.com editor -->
         
         <style type="text/css">
@@ -166,7 +157,10 @@ h1 {
 .navbar-toggle {
 	outline:0;
 }
-
+.change{
+    width:50%;
+    height:auto;
+}
 .divider {
 	height:70px;
 }
@@ -174,17 +168,40 @@ h1 {
 .panel {
 	border-width:0;
 }
-
-@media (max-width: 768px) {
-	header {
-		height: 250px;
-	}
-  .img{
-    width: 60%;
+@media (max-width: 600px){
+  header {
+    height: 210px;
+  }
+  .change{
+    width:60%;
     height:auto;
   }
 }
 
+@media (max-width: 768px) and (min-width: 601px){
+	header {
+		height: 250px;
+	}
+  .change{
+    width:60%;
+    height:auto;
+  }
+  .divider{
+    height:20px;
+  }
+}
+@media (max-width: 1300px) and (min-width: 769px){
+  header {
+    height: 320px;
+  }
+  .change{
+    width:500px;
+    height:auto;
+  }
+  .divider{
+    height:40px;
+  }
+}
 #map-canvas {
   	width: 100%; 
   	height: 300px;
@@ -256,7 +273,7 @@ section {
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                     <h1 class="" style="text-align: center;"><a href="#" title="Wharton Roulette" class=""><img src="roulette.png" style="width: 50%; height:auto;"></a>
+                     <h1 class="" style="text-align: center;"><a href="#" title="Wharton Roulette" class=""><img src="roulette.png" class="change"></a>
           <p class="lead" style="font-size: 30px;">Meet someone new.</p></h1>
 
                 </div>
@@ -322,11 +339,13 @@ section {
         </div>
     </section>
     <div class="container bg-4" id="section3" style="width: 100%;">
+      <div class="row" style="height: 170px;">
             <div class="divider text-center">
                  <h1 class="">How does it work?<br/></h1>
             </div>
+          </div>
         <div class="row">
-            <div class="col-sm-4 col-xs-6">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="panel panel-default">
                      <div class="panel-thumbnail">
                         <img src="one.png" class="img-responsive">
@@ -338,7 +357,7 @@ section {
                 <!--/panel-->
             </div>
             <!--/col-->
-            <div class="col-sm-4 col-xs-6">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-thumbnail">
                         <img src="two.png" class="img-responsive">
@@ -351,7 +370,7 @@ section {
                 <!--/panel-->
             </div>
             <!--/col-->
-            <div class="col-sm-4 col-xs-6">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-thumbnail">
                         <img src="three.png" class="img-responsive">
@@ -383,7 +402,7 @@ section {
     <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                     <h1 class="" style="text-align: center;"><a href="#" title="Wharton Roulette" class=""><img src="roulette.png" style="width: 50%; height:auto;"></a>
+                     <h1 class="" style="text-align: center;"><a href="#" title="Wharton Roulette" class=""><img src="roulette.png" class="change"></a>
           <p class="lead" style="font-size: 30px;">Piloting April 13th, 2014 with the first 150 sign-ups.</p></h1>
             </div>
                 <div class="divider"></div>
